@@ -24,4 +24,16 @@ export class ServiceCubos {
     let url = environment.urlApiCubos + request;
     return this._http.get(url);
   }
+
+  getMarcas(): Observable<any> {
+    let request = 'api/cubos/marcas';
+    let url = environment.urlApiCubos + request;
+    return this._http.get(url);
+  }
+
+  getCubosMarca(marca: string): Observable<any> {
+    let request = 'api/cubos/cubosmarca/' + marca;
+    let url = environment.urlApiCubos + request;
+    return this._http.get(url);
+  }
 }

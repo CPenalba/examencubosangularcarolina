@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { appRoutingProvider, routing } from './app.routing';
 import { provideHttpClient } from '@angular/common/http';
 import { ServiceCubos } from './services/service.cubos';
+import { CubosMarcaComponent } from './components/cubos-marca/cubos-marca.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ServiceCubos } from './services/service.cubos';
     HomeComponent,
     DetallesCuboComponent,
     LoginComponent,
+    CubosMarcaComponent,
   ],
   imports: [BrowserModule, routing, FormsModule],
   providers: [appRoutingProvider, provideHttpClient(), ServiceCubos],

@@ -37,9 +37,11 @@
             Marcas
           </a>
           <ul class="dropdown-menu">
-            <!-- <li *ngFor="let dept of departamentos">
-              <a class="dropdown-item">{{ dept.nombre }}</a>
-            </li> -->
+            <li *ngFor="let marca of marcas">
+              <a class="dropdown-item" [routerLink]="['/cubosmarca', marca]">{{
+                marca
+              }}</a>
+            </li>
           </ul>
         </li>
       </ul>
