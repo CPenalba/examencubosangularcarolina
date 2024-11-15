@@ -11,6 +11,7 @@ import { appRoutingProvider, routing } from './app.routing';
 import { provideHttpClient } from '@angular/common/http';
 import { ServiceCubos } from './services/service.cubos';
 import { CubosMarcaComponent } from './components/cubos-marca/cubos-marca.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CubosMarcaComponent } from './components/cubos-marca/cubos-marca.compon
     DetallesCuboComponent,
     LoginComponent,
     CubosMarcaComponent,
+    PerfilComponent,
   ],
   imports: [BrowserModule, routing, FormsModule],
   providers: [appRoutingProvider, provideHttpClient(), ServiceCubos],
