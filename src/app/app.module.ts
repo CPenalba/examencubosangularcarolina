@@ -9,6 +9,7 @@ import { DetallesCuboComponent } from './components/detalles-cubo/detalles-cubo.
 import { LoginComponent } from './components/login/login.component';
 import { appRoutingProvider, routing } from './app.routing';
 import { provideHttpClient } from '@angular/common/http';
+import { ServiceCubos } from './services/service.cubos';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { provideHttpClient } from '@angular/common/http';
     LoginComponent,
   ],
   imports: [BrowserModule, routing, FormsModule],
-  providers: [appRoutingProvider, provideHttpClient()],
+  providers: [appRoutingProvider, provideHttpClient(), ServiceCubos],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
